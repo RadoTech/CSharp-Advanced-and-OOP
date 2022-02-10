@@ -33,13 +33,13 @@ namespace SetsAndDictionariesAdv04Exer
 
             foreach (var item in inputList)
             {
-                if (inputDictA.ContainsKey(item))
+                if (inputDictA.ContainsKey(item)) 
                 {
-                    inputDictA[item]++;
+                    inputDictA[item]++; //if there is such key(number) already in the collection increase the value (the appearance) with 1
                 }
                 else
                 {
-                    inputDictA.Add(item, 1);
+                    inputDictA.Add(item, 1); //if its a new key then add the value(appearance) for the first time
                 }
             }
 
